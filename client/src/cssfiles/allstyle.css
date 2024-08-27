@@ -3,7 +3,7 @@
 .navbar-collapse {
     background-color: skyblue;
     margin-top: -3%;
-    padding: 4px;
+    padding: 5px;
     width: 100%;
 }
 .nav-link.custom-link:hover {
@@ -16,7 +16,7 @@
     font-size: 25px;
   }
   .navbar-nav {
-    margin-left: 46%;
+    margin-left: 36%;
 }
 
 
