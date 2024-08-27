@@ -13,6 +13,7 @@ const Header = ({ user, handleLogout }) => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="navbar-collapse">
+        <h4>Training_Institute</h4>
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <Link className="nav-link custom-link" to="/">Home</Link>
