@@ -12,7 +12,7 @@ const [inputUser, setInputUser] = useState({
     amount:'',
     duration:''
   });
-  
+  const url="https://training-institute-site.vercel.app";
   const { id } = useParams();
 //   const fetchSingleUser = async () => {
 //     const res = await API.get(`/course/${id}`);
@@ -38,7 +38,7 @@ const [inputUser, setInputUser] = useState({
   const handleSubmit = async (event) => {
     event.preventDefault();
     console.log(inputUser);
-    const res = await axios.put(`http://localhost:5000/api/edit/${id}`,inputUser);
+    const res = await axios.put(`${url}/api/edit/${id}`,inputUser);
     console.log(res);
     if (res.status === 200) {
       window.alert('Course updated successfully!');
