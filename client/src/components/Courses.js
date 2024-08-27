@@ -6,14 +6,14 @@ import { useNavigate } from 'react-router-dom';
 const Courses = ({ user }) => {
     const [courses, setCourses] = useState([]);
     const navigate = useNavigate();
-
+    const url="https://training-institute-site.vercel.app";
     useEffect(() => {
         if (!user) {
             navigate('/login');
             return;
         }
 
-        axios.get('http://localhost:5000/api/courselist')
+        axios.get(`${url}/api/courselist`)
             .then(response => {
                 console.log('API Response:', response.data);
                 if (Array.isArray(response.data)) {
