@@ -10,11 +10,11 @@ const Signup = () => {
     const [password, setPassword] = useState('');
     const [role, setRole] = useState('student');
     const navigate = useNavigate();
-
+    const url="https://training-institute-site.vercel.app";
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/signup', {
+            const response = await axios.post(`${url}/api/signup`, {
                 firstname,
                 lastname,
                 email,
