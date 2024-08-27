@@ -12,10 +12,10 @@ const EditCourse = () => {
         amount: '',
         duration: ''
     });
-
+const url="https://training-institute-site.vercel.app";
     useEffect(() => {
         
-        axios.get(`http://localhost:5000/api/course/${courseId}`)
+        axios.get(`${url}/api/course/${courseId}`)
             .then((response) => {
                 setCourse(response.data);
             })
@@ -34,7 +34,7 @@ const EditCourse = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.put(`http://localhost:5000/api/edit/${courseId}`, course);
+            const res = await axios.put(`${url}/api/edit/${courseId}`, course);
             if (res.status === 200) {
                 alert('Course updated successfully');
                 navigate('/admin');
