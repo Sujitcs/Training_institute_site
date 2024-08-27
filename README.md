@@ -1,6 +1,6 @@
 see all the Course details---https://training-institute-site-client.vercel.app/
 
-https://github.com/user-attachments/assets/aa6c442b-4774-4c01-878e-cde4d98a5c09
+https://github.com/user-attachments/assets/d7cd53cf-8598-42f1-915f-c972c2d6eb1c
 
 ![home](https://github.com/user-attachments/assets/04aa7a32-098c-4300-b7da-34686bf58736)
 see all the Course details in server---https://training-institute-site.vercel.app/api/courselist
