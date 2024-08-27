@@ -16,13 +16,13 @@ const [courseData, setCourseData] = useState({
     const { name, value } = e.target;
     setCourseData({ ...courseData, [name]: value });
   };
-
+const url="https://training-institute-site.vercel.app";
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
       
-      await axios.post('http://localhost:5000/api/add', courseData);
+      await axios.post(`${url}/api/add`, courseData);
       window.alert('Course added successfully!');
       navigate('/courses');
       setCourseData({
