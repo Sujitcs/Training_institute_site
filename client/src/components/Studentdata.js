@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Studentdata = () => {
   const [studentData, setStudentData] = useState([]);
-
+const url="https://training-institute-site.vercel.app";
   useEffect(() => {
-    axios.get('http://localhost:5000/api/studentlist')
+    axios.get(`${url}/api/studentlist`)
       .then(response => {
         setStudentData(response.data);
       })
