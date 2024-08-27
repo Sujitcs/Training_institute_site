@@ -4,9 +4,9 @@ import '../cssfiles/home.css';
 
 const Home = () => {
     const [courses, setCourses] = useState([]);
-
+    const url="https://training-institute-site.vercel.app";
     useEffect(() => {
-        axios.get('http://localhost:5000/api/courselist')
+        axios.get(`${url}/api/courselist`)
             .then(response => setCourses(response.data))
             .catch(error => console.log(error));
     }, []);
