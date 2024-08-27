@@ -7,9 +7,9 @@ import axios from 'axios';
 const EditDelete = () => {
   const navigate = useNavigate();
   const [courses, setCourses] = useState([]);
-
+const url="https://training-institute-site.vercel.app";
   useEffect(() => {
-    axios.get("http://localhost:5000/api/courselist")
+    axios.get(`${url}/api/courselist`)
       .then((response) => {
         setCourses(response.data);
       })
@@ -27,7 +27,7 @@ const EditDelete = () => {
     
     if (confirmDelete) {
       try {
-        const res = await axios.delete(`http://localhost:5000/api/delete/${courseId}`);
+        const res = await axios.delete(`${url}/api/delete/${courseId}`);
         
         if (res.status === 200) {
           window.alert('Course deleted successfully');
