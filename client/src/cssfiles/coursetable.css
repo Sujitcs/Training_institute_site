@@ -1,0 +1,17 @@
+/* Course table styling */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #497572;
+    text-align: left;
+    padding: 8px;
+}
+
+.table th {
+    background-color: #0ad293;
+    font-weight: bold;
+}

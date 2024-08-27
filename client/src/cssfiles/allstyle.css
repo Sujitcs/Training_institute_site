@@ -1,0 +1,56 @@
+/* hader menu styling */
+
+.navbar-collapse {
+    background-color: skyblue;
+    margin-top: -3%;
+    padding: 4px;
+    width: 100%;
+}
+.nav-link.custom-link:hover {
+    color: darkblue;
+}
+
+.custom-link {
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+  }
+  .navbar-nav {
+    margin-left: 46%;
+}
+
+
+
+@media (max-width: 680px) {
+    .navbar-nav {
+        margin-left:0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .nav-item {
+        text-align: center;
+        padding: 10px 10px;
+    }
+
+    .custom-link {
+        font-size: 20px;
+    }
+}
+
+
+.btn-secondary {
+    margin-left: 10px;
+}
+.nav-menu{
+    display: flex;
+    font-weight: bold;
+    padding: 0px 20px 0px 40px;
+    margin-left: 48%;
+    margin-top: -2%;
+}
+.nav-l{
+    padding: 0px 10px;
+    font-size: larger;
+}

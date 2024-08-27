@@ -1,0 +1,29 @@
+
+div {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  color: #4e4750;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #202020;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #4cf7f7;
+}
+
+tr:hover {
+  background-color: #c0bebe;
+}

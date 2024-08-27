@@ -1,0 +1,37 @@
+.full-width-container {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f8f9fa; /* Optional: Add a background color */
+}
+
+.full-width-container h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container .mt-0{
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
