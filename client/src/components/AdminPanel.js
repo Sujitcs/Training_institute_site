@@ -6,10 +6,10 @@ import Coursetable from './Coursetable';
 const AdminPanel = () => {
     const [ ,setUsers] = useState([]);
     const [courses, setCourses] = useState([]);
-
+    const url="https://training-institute-site.vercel.app";
     useEffect(() => {
-        axios.get('http://localhost:5000/api/list').then(response => setUsers(response.data));
-        axios.get('http://localhost:5000/api/courselist').then(response => setCourses(response.data));
+        axios.get(`${url}/api/list`).then(response => setUsers(response.data));
+        axios.get(`${url}/api/courselist`).then(response => setCourses(response.data));
     }, []);
 
 
