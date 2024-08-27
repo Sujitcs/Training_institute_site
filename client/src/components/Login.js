@@ -7,11 +7,11 @@ const Login = ({ setUser }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
-
+    const url="https://training-institute-site.vercel.app";
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/signin', { email, password });
+            const response = await axios.post(`${url}/api/signin`, { email, password });
             window.alert('successfully login');
             if (response.data.successful) {
                 setUser(response.data);
